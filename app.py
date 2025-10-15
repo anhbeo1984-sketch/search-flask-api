@@ -6,8 +6,8 @@ import sqlite3
 app = Flask(__name__)
 DB_NAME = 'my_database.db'
 TABLE_NAME = 'search_data'
-KEY_CCCD_COLUMN_NAME = 'Ma_Key_Tim_Kiem'  # Tên cột CCCD (Giả định từ trước)
-KEY_MST_COLUMN_NAME = 'Ma_So_Thue'      # TÊN CỘT MỚI: Mã số thuế (BẠN PHẢI KIỂM TRA CHÍNH XÁC)
+KEY_CCCD_COLUMN_NAME = 'CCCD'  # Tên cột CCCD (Giả định từ trước)
+KEY_MST_COLUMN_NAME = 'Ma_so_thue'      # TÊN CỘT MỚI: Mã số thuế (BẠN PHẢI KIỂM TRA CHÍNH XÁC)
 
 # Cho phép Front-end (index.html) truy cập (CORS)
 # ... (Giữ nguyên hàm add_cors_headers) ...
